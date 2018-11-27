@@ -125,3 +125,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
+p img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
