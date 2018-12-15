@@ -3,31 +3,48 @@
     <h4><el-tag type="danger">作品列表</el-tag></h4>
     <ul>
       <li>
-        <div class="before">
-          <img src="../assets/item2.jpeg" alt="" />
-        </div>
-        <div class="after">
-          <p class="head">贪吃蛇</p>
-          <p class="body">个人开发游戏</p>
-        </div>
+        <a href="http://localhost:3000/production/plan/index.html" target="_blank">
+            <div class="before" :style="{backgroundImage: 'url(../static/img/plan.png)'}">
+              <!-- <img src="../assets/item2.jpeg" alt="" /> -->
+            </div>
+            <div class="after">
+              <p class="head">打飞机游戏</p>
+              <p class="body">本游戏运用H5引擎制作，目前实现积分，消灭敌机，选择关卡</p>
+            </div>
+        </a>
       </li>
       <li>
-        <div class="before">
-          <img src="../assets/item2.jpeg" alt="" />
-        </div>
-        <div class="after">
-          <p class="head">贪吃蛇</p>
-          <p class="body">个人开发游戏</p>
-        </div>
+        <a href="http://localhost:3000/production/hotel/index_1.html" target="_blank">
+            <div class="before" :style="{backgroundImage: 'url(../static/img/hotel.png)'}">
+              <!-- <img src="../assets/item2.jpeg" alt="" /> -->
+            </div>
+            <div class="after">
+              <p class="head">hotel网站设计</p>
+              <p class="body">本网站运用jquery技术，html，css布局</p>
+            </div>
+        </a>
       </li>
       <li>
-        <div class="before">
-          <img src="../assets/item2.jpeg" alt="" />
-        </div>
-        <div class="after">
-          <p class="head">贪吃蛇</p>
-          <p class="body">个人开发游戏</p>
-        </div>
+        <a href="http://localhost:3000/production/chemical/html/index.html" target="_blank">
+            <div class="before" :style="{backgroundImage: 'url(../static/img/chemical.png)'}">
+              <!-- <img src="../assets/item2.jpeg" alt="" /> -->
+            </div>
+            <div class="after">
+              <p class="head">化工学院</p>
+              <p class="body">化工学院网站布局，Tab切换，轮播切换</p>
+            </div>
+        </a>
+      </li>
+      <li>
+        <a href="http://localhost:3000/production/snake/tcs.html" target="_blank">
+            <div class="before" :style="{backgroundImage: 'url(../static/img/snake.png)'}">
+              <!-- <img src="../assets/item2.jpeg" alt="" /> -->
+            </div>
+            <div class="after">
+              <p class="head">贪吃蛇</p>
+              <p class="body">怀念贪吃蛇游戏</p>
+            </div>
+        </a>
       </li>
     </ul>
   </div>
@@ -73,6 +90,8 @@ export default {
           color: #fff;
           background-color: #333;
           font-size: .8rem;
+          box-sizing: border-box;
+          padding: 0 1rem;
           .head{
             text-align: center
           }
@@ -83,6 +102,9 @@ export default {
         }
         .before{
           backface-visibility: hidden;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
         }
         div{
           position: absolute;

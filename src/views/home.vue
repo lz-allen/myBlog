@@ -7,7 +7,7 @@
         <ul>
           <li v-for="(item,key) in lists" :key="key" @click="toArticlePage(item._id)">
             <div class="itemLeft">
-              <img src="../assets/item.jpeg" alt="">
+              <img :src="item.src" alt="">
             </div>
             <div class="itemRight">
               <h4>{{item.title}}</h4>
@@ -138,7 +138,7 @@ export default {
           .itemLeft{
             img{
               width: 100%;
-              height: 100%
+              height: 10rem;
             }
           }
           .itemRight{
